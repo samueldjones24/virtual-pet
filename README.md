@@ -6,8 +6,8 @@ To solve these problems, we're going to make our own <strong>JavaScript Virtual 
 
 ## Getting Started
 
-Create new repo in GitHub entitled <strong>virtual-pet<strong>
-Create new directory ```mkdir``` on your machine, also entitled <strong>virtual-pet<strong>
+Create new repo in GitHub entitled <strong>virtual-pet</strong>
+Create new directory ```mkdir``` on your machine, also entitled <strong>virtual-pet</strong>
 Initialise a new NPM project here ```npm init```
 Install our testing framework, Jest, as a development dependency ```npm install -D jest```
 Alter the ```package.json``` file so that the test value is "jest".
