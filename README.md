@@ -6,15 +6,15 @@ To solve these problems, we're going to make our own <strong>JavaScript Virtual 
 
 ## Getting Started
 
-Create new repo in GitHub entitled <strong>virtual-pet</strong>
-Create new directory ```mkdir``` on your machine, also entitled <strong>virtual-pet</strong>
-Initialise a new NPM project here ```npm init```
-Install our testing framework, Jest, as a development dependency ```npm install -D jest```
-Alter the ```package.json``` file so that the test value is "jest".
-Get the SSH link for your repo, and link it to your local repository using ```git remote add origin {the ssh link you just copied}```
-Lastly, create a ```.gitignore``` file and insert <italics>node_modules</italics> as we do not want this directory uploaded to GitHub. 
-
-Now, you're good to go!
+Create new repo in GitHub entitled <strong>virtual-pet</strong>.</brk>
+Create new directory ```mkdir``` on your machine, also entitled <strong>virtual-pet</strong>.</brk>
+Initialise a new NPM project here ```npm init```.</brk>
+Install our testing framework, Jest, as a development dependency ```npm install -D jest```.</brk>
+Alter the ```package.json``` file so that the test value is "jest".</brk>
+Get the SSH link for your repo, and link it to your local repository using ```git remote add origin {the ssh link you just copied}```.</brk>
+Lastly, create a ```.gitignore``` file and insert <italics>node_modules</italics> as we do not want this directory uploaded to GitHub.</brk>
+</brk>
+Now, you're good to go! 
 
 ### Prerequisites
 
