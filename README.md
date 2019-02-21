@@ -16,25 +16,10 @@ Lastly, create a ```.gitignore``` file and add the line <i>node_modules</i> to i
 <br/>
 Now, you're good to go! 
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Visual Studio Code
-Jest
-
-```
-
-## Running the tests
-
-To run the automated tests, hit ```npm run test```.
-
 ## Built With
 
 * [Visual Studio Code](https://code.visualstudio.com/docs/) - Text Editor
 * [Jest](https://jestjs.io/docs/en/getting-started) - Testing Framework
-* 
 
 ## Acknowledgments
 
