@@ -21,6 +21,10 @@ Now, you're good to go!
 * [Visual Studio Code](https://code.visualstudio.com/docs/) - Text Editor
 * [Jest](https://jestjs.io/docs/en/getting-started) - Testing Framework
 
+## Walkthrough
+
+Lorem ipsum and so on
+
 ## Acknowledgments
 
 * @MCRCodes
