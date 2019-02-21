@@ -12,7 +12,7 @@ Initialise a new NPM project here ```npm init```.<br/>
 Install our testing framework, Jest, as a development dependency ```npm install -D jest```.<br/>
 Alter the ```package.json``` file so that the test value is "jest".<br/>
 Get the SSH link for your repo, and link it to your local repository using ```git remote add origin {the ssh link you just copied}```.<br/>
-Lastly, create a ```.gitignore``` file and insert <i>node_modules</i> as we do not want this directory uploaded to GitHub.<br/>
+Lastly, create a ```.gitignore``` file and add the line <i>node_modules</i> to it as we do not want this directory uploaded to GitHub.<br/>
 <br/>
 Now, you're good to go! 
 
@@ -23,6 +23,7 @@ What things you need to install the software and how to install them
 ```
 Visual Studio Code
 Jest
+
 ```
 
 ## Running the tests
