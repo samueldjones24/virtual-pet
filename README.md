@@ -6,9 +6,9 @@ To solve these problems, we're going to make our own <strong>JavaScript Virtual 
 
 ## Getting Started
 
-Create new repo in GitHub entitled <strong>virtual-pet</strong>.<br/>
+Create new repository in GitHub entitled <strong>virtual-pet</strong>.<br/>
 Create new directory ```mkdir``` on your machine, also entitled <strong>virtual-pet</strong>.<br/>
-Initialise a new NPM project here ```npm init```.<br/>
+Move into this new directory and tnitialise a new NPM project ```npm init```.<br/>
 Install our testing framework, Jest, as a development dependency ```npm install -D jest```.<br/>
 Alter the ```package.json``` file so that the test value is "jest".<br/>
 Get the SSH link for your repo, and link it to your local repository using ```git remote add origin {the ssh link you just copied}```.<br/>
@@ -23,10 +23,8 @@ Now, you're good to go!
 
 ## Walkthrough
 
-Lorem ipsum and so on
+In this project, we will be following the [Constructor / Prototype](https://hackmd.io/s/SkKc3RFHV) approach where we will create a set of values for the pet (name, age, etc.) within the constructor and methods (growUp, walk, etc.) within the prototype. In order to make our code bulletproof, we will continuously test our features and refactor wherever possible. 
 
 ## Acknowledgments
 
 * @MCRCodes
-* 
-* 
