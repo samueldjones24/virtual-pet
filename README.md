@@ -16,14 +16,14 @@ Lastly, create a ```.gitignore``` file and add the line <i>node_modules</i> to i
 <br/>
 Now, you're good to go! 
 
+## Walkthrough
+
+In this project, we will be following the [Constructor / Prototype](https://hackmd.io/s/SkKc3RFHV) approach where we will create a set of values for the pet (name, age, etc.) within the constructor and methods (growUp, walk, etc.) within the prototype. In order to make our code bulletproof, we will continuously test our features and refactor wherever possible. 
+
 ## Built With
 
 * [Visual Studio Code](https://code.visualstudio.com/docs/) - Text Editor
 * [Jest](https://jestjs.io/docs/en/getting-started) - Testing Framework
-
-## Walkthrough
-
-In this project, we will be following the [Constructor / Prototype](https://hackmd.io/s/SkKc3RFHV) approach where we will create a set of values for the pet (name, age, etc.) within the constructor and methods (growUp, walk, etc.) within the prototype. In order to make our code bulletproof, we will continuously test our features and refactor wherever possible. 
 
 ## Acknowledgments
 
