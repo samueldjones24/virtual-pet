@@ -1,3 +1,5 @@
+const maxFitness = 10;
+
 const pet = {
     name: 'Fido',
     age: 0,
@@ -5,8 +7,14 @@ const pet = {
     fitness: 10,
     growUp: function() {
         this.age += 1;
-    }
+    },
+    walk: function() {
+       if(fitness <= 6) {
+        this.fitness += 4;
+    } else 
+    this.fitness = 10;
 }
+};
 
 function Pet(name) {
     this.name = name;
@@ -20,5 +28,12 @@ Pet.prototype.growUp = function() {
     this.hunger += 5; 
     this.fitness -= 3;
 }
+
+Pet.prototype.walk = function() {
+    if(this.fitness <= 6) {
+        this.fitness += 4;
+    } else 
+    this.fitness = maxFitness;
+};
 
 module.exports = Pet;
