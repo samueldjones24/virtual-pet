@@ -18,7 +18,42 @@ Now, you're good to go!
 
 ## Walkthrough
 
-In this project, we will be following the [Constructor / Prototype](https://hackmd.io/s/SkKc3RFHV) approach where we will create a set of values for the pet (name, age, etc.) within the constructor and methods (growUp, walk, etc.) within the prototype. In order to make our code bulletproof, we will continuously test our features and refactor wherever possible. 
+In this project, we will be following the [Constructor / Prototype](https://hackmd.io/s/SkKc3RFHV) approach where we will create a set of values for the pet (name, age, etc.) within the <strong>constructor</strong> and methods (growUp, walk, etc.) within the <strong>prototype</strong>. In order to make our code bulletproof, we will continuously test our features and refactor wherever possible. 
+
+Before creating our logic, we will need to first create our test unit for the pet constructor. The output from declaring a new pet will be an <strong>object</strong> data type, so let's test for that.
+
+In a file named ``__test__/pet.test.js``, add the following code: 
+
+```
+describe('constructor', () => {
+
+  it('returns an object', () => {
+    expect(new Pet('Fido')).toBeInstanceOf(Object);
+  });
+});
+```
+When we run ```npm test -- pet```, the above unit will be our test case. It will now be our job to create the logic that passes the test. 
+
+Create a new file ``src/pet.js`` and then at the top of the test file that we just created, add the following code:
+
+```
+const Pet = require('../src/pet');
+```
+
+This new code has created a variable ``Pet``, which when combined with the ``new`` keyword, will be a constructor function that returns an object. Remember that a constructor function allows you to create a <i>type</i> of object that has a common set of methods. 
+
+In pet.js, add the following code:
+
+```
+function Pet() {}
+
+module.exports = Pet;
+```
+
+This code: (1) defines a function (2) exports that function from the file.
+
+To be continued...
+
 
 ## Built With
 
