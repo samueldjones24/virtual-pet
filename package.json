@@ -4,11 +4,14 @@
   "description": "Make a Virtual Pet",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "npx": "jest --coverage"
   },
   "author": "Sam Jones",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^5.14.1",
+    "eslint-config-mcr-codes": "^1.3.0",
     "jest": "^24.1.0"
   }
 }
