@@ -1,6 +1,6 @@
 const Pet = require('../src/pet');
 
-describe('constructor', () => {
+describe('create pet with initial values', () => {
     
     it('returns an object', () => {
         expect(new Pet('Fido')).toBeInstanceOf(Object);
@@ -23,7 +23,7 @@ describe('constructor', () => {
     })
 });
 
-describe('growUp', () => {
+describe('pet grows up', () => {
 
     it('increments the age by 1', () => {
         const pet = new Pet('Fido');
@@ -42,7 +42,7 @@ describe('growUp', () => {
     });
 });
 
-describe('walk', () => {
+describe('take the pet for a walk', () => {
 
     it('increments the fitness by 4', () => {
             const pet = new Pet('Fido');
@@ -58,7 +58,7 @@ describe('walk', () => {
     })
 })
 
-describe('feed', () => {
+describe('feed the pet', () => {
 
     it('decreases the hunger by 3', () => {
         const pet = new Pet('Fido');
@@ -75,7 +75,7 @@ describe('feed', () => {
     })
 });
 
-describe('checkUp', () => {
+describe('pet goes for a check up', () => {
 
     it('returns \'I need a walk\' if fitness is 3 or less', () => {
         const pet = new Pet('Fido');
@@ -102,5 +102,31 @@ describe('checkUp', () => {
         pet.hunger = 4;
         pet.checkUp();
         expect(pet.checkUp()).toEqual('I feel great!');
+    })
+});
+
+describe('check if pet is alive', () => {
+
+    it('returns false if fitness is 0 or less', () => {
+        const pet = new Pet('Fido');
+        pet.fitness = 0;
+        expect(pet.isAlive).toEqual(false);
+    })
+    it('returns false if hunger is 10 or more', () => {
+        const pet = new Pet('Fido');
+        pet.hunger = 11;
+        expect(pet.isAlive).toEqual(false);
+    })
+    it('returns false if age is 30 or more', () => {
+        const pet = new Pet('Fido');
+        pet.age = 31;
+        expect(pet.isAlive).toEqual(false);
+    })
+    it('returns true if neither of the above is true', () => {
+        const pet = new Pet('Fido');
+        pet.fitness = 5;
+        pet.hunger = 6;
+        pet.age = 14;
+        expect(pet.isAlive).toEqual(true);
     })
 })
