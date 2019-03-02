@@ -15,10 +15,17 @@ To solve these problems, we're going to make our own <strong>JavaScript Virtual 
 
 ## Installation
 
-For this project, you will need to create remote and local respositories, navigate into your local and initialise an NPM project from your terminal using the command ```npm init```.
+For this project, you will need to clone this repository and navigate into your local directory. 
+
+* Initialise NPM project from your terminal using the command ```npm init```.
 
 * To install Jest, run ```npm install -D jest```
 
+* To run tests, run ```npm test```
+
+## Author
+
+Sam Jones
 
 ## Acknowledgments
 
