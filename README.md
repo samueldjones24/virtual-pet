@@ -7,6 +7,7 @@ To solve these problems, we're going to make our own <strong>JavaScript Virtual 
 ## Built With
 
 *  Node.js
+*  Jest
 
 ## Prerequisites
 
