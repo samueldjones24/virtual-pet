@@ -43,7 +43,7 @@ describe('pet grows up', () => {
     it('throws an error if the pet is not alive', () => {
         const pet = new Pet('Fido');
         pet.age = 30;
-        expect(() => pet.growUp()).toThrow('Your pet is no longer alive :(');
+        expect(() => pet.growUp()).toThrow('Your pet died :(');
       });
 });
 
@@ -64,7 +64,7 @@ describe('take the pet for a walk', () => {
     it('throws an error if the pet is not alive', () => {
         const pet = new Pet('Fido');
         pet.fitness = 0;
-        expect(() => pet.walk()).toThrow('Your pet is no longer alive :(');
+        expect(() => pet.walk()).toThrow('Your pet died :(');
       });
 })
 
@@ -85,7 +85,7 @@ describe('feed the pet', () => {
     it('throws an error if the pet is not alive', () => {
         const pet = new Pet('Fido');
         pet.hunger = 10;
-        expect(() => pet.feed()).toThrow('Your pet is no longer alive :(');
+        expect(() => pet.feed()).toThrow('Your pet died :(');
       });
 });
 
@@ -122,7 +122,7 @@ describe('pet goes for a check up', () => {
         pet.hunger = 10;
         pet.age = 30;
         pet.fitness = 0;
-        expect(() => pet.checkUp()).toThrow('Your pet is no longer alive :(');
+        expect(() => pet.checkUp()).toThrow('Your pet died :(');
       });
 });
 
@@ -150,4 +150,21 @@ describe('check if pet is alive', () => {
         pet.age = 14;
         expect(pet.isAlive).toEqual(true);
     })
-})
+});
+
+describe('adoptChild', () => {
+
+    it('throws an error if you try to adoptChild, but parent is not alive', () => {
+        const parent = new Pet('Fido');
+        const child = new Pet('Jack');
+        parent.age = 30;
+        expect(() => parent.adoptChild(child)).toThrow('You cannot adopt as your pet is not alive :(');
+      });
+
+    it('adopt a child', () => {
+        const parent = new Pet('Fido');
+        const child = new Pet('Jack');
+        parent.adoptChild(child);
+        expect(parent.children).toEqual([{ name: 'Jack', age: 0, hunger: 0, fitness: 10, children: []}]);
+    })
+});
